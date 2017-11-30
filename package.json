@@ -1,0 +1,32 @@
+{
+  "name": "rsys-minimize",
+  "version": "1.0.0",
+  "description": "CLI node app that let you minimize an HTML file, keep special comments, and keep Responsys functions intact.",
+  "keywords": [
+    "responsys, node, windows, cli, minimize, html"
+  ],
+  "main": "rsys_minimize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=6.11.2"
+  },
+  "author": {
+    "name": "Lucas Dasso",
+    "email": "Dasso.Lucas@c238.com.ar",
+    "web": "http://www.C238.com.ar/"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:Lukas238/rsys-minimize.git"
+    }
+  ],
+  "homepage": "https://github.com/Lukas238/rsys-minimize.git",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "rsys_minimize": "./rsys_minimize.js"
+  }
+}
