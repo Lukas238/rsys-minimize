@@ -29,7 +29,7 @@ filename.min.htm```.
 Configure a custom task in [VSCode] to minimize the current opened file.
 
 Here is an example task file that add the tasks **rsys_minimize**.
-```
+```js
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
@@ -46,6 +46,47 @@ Here is an example task file that add the tasks **rsys_minimize**.
     ]
 }
 ```
+
+## About HTML comments
+
+### Plain comments
+Plain HTML comments will get removed.
+```html
+<!-- REMOVE THIS -->
+```
+
+### _Special_ comments
+
+_Special_ comments starting with double asterisk will not be removed.
+```html
+<!--** KEEP THIS -->
+```
+
+### IE Conditional comments
+IE conditional comments will not be removed.
+
+```html
+<!--[if IE 6]>KEEP THIS TOO<![endif]-->
+<!--[if !IE]> -->ALSO KEEP THIS<!-- <![endif]-->
+```
+
+## About Responsys functions inside comments
+
+Any RSYS function found inside an HTML comment will be extracted and preserverd in the code.
+
+From this...
+```html
+<!-- This is an example of a test string
+$setglobalvars(my_var, "test string")$
+-->
+```
+
+To this...
+```html
+$setglobalvars(my_var, "test string")$
+```
+
+
 
 [VSCode]: https://code.visualstudio.com/
 [Responsys]: https://www.oracle.com/marketingcloud/products/cross-channel-orchestration/
