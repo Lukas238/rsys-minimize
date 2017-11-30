@@ -61,7 +61,7 @@ function minimize(input_code) {
 
 	//Removes spaces between attributes in the tags
 	input_code = input_code.replace(/<[^img](.*?)>/gi, function (match) {
-		return match.replace(/([a-z]*="[^"]*")[\s]{2,}/gmi, '$1');
+		return match.replace(/([a-z]*="[^"]*")\s{2,}/gmi, '$1 ');
 	});
 
 	// Remove multiple consecutive  white spaces
