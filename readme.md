@@ -4,12 +4,12 @@ CLI node app that let you minimize an HTML file, keep special comments, and keep
 
 ## Options
 
-**Usage**: rsys_minimize <filename>
+**Usage**: rsys-minimize <filename>
 
 ## Install
 
 ```
-npm install rsys_minimize -g
+npm install -g rsys-minimize
 ```
 
 >**Note**: You must install this package globally to be able to use it anywhere from the CLI.
@@ -17,7 +17,7 @@ npm install rsys_minimize -g
 ## How to use
 
 ```
-rsys_minimize C:\work\filename.htm
+rsys-minimize C:\work\filename.htm
 ```
 
 The resulted minimized file will be created and saved in the same folder with ```.min``` added to the name, like ```
@@ -28,7 +28,7 @@ filename.min.htm```.
 
 Configure a custom task in [VSCode] to minimize the current opened file.
 
-Here is an example task file that add the tasks **rsys_minimize**.
+Here is an example task file that add the tasks **rsys-minimize**.
 ```js
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
@@ -36,9 +36,9 @@ Here is an example task file that add the tasks **rsys_minimize**.
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "rsys_minimize",
+            "taskName": "rsys-minimize",
             "type": "shell",
-            "command": "rsys_minimize ${file}",
+            "command": "rsys-minimize ${file}",
             "presentation": {
                 "reveal": "never"
             }

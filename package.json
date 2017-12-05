@@ -5,7 +5,7 @@
   "keywords": [
     "responsys, node, windows, cli, minimize, html"
   ],
-  "main": "rsys_minimize.js",
+  "main": "rsys-minimize.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,7 @@
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
-    "rsys_minimize": "./rsys_minimize.js"
-  }
+    "rsys-minimize": "./rsys-minimize.js"
+  },
+  "dependencies": {}
 }

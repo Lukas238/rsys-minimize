@@ -103,7 +103,7 @@ function writeFile(filename, data) {
 
 // Get filename from the command line arguments
 if (process.argv.length <= 2) {
-	console.log("Usage: rsys_minimize <filename>");
+	console.log("Usage: rsys-minimize <filename>");
 	process.exit(-1);
 }
 
