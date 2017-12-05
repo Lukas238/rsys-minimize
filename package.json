@@ -1,6 +1,6 @@
 {
   "name": "rsys-minimize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI node app that let you minimize an HTML file, keep special comments, and keep Responsys functions intact.",
   "keywords": [
     "responsys, node, windows, cli, minimize, html"
